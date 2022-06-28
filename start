@@ -1,0 +1,11 @@
+#!/bin/bash
+
+export CONDA_STORE_URL=https://conda-store.qhub.dev
+export CONDA_STORE_AUTH=basic
+export CONDA_STORE_USERNAME=username
+export CONDA_STORE_PASSWORD=password
+
+mkdir -p ~/.jupyter
+echo "c.JupyterApp.kernel_spec_manager_class = \"nb_conda_store_kernels.manager.CondaStoreKernelSpecManager\"" > ~/.jupyter/jupyter_config.py
+
+exec "$@"

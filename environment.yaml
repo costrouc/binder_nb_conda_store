@@ -1,0 +1,9 @@
+name: nb_conda_store_kernels
+channels:
+  - conda-forge
+dependencies:
+  - jupyterlab
+  - jlab-enhanced-launcher
+  - pip
+  - pip:
+    - nb-conda-store-kernels
