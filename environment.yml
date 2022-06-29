@@ -4,6 +4,4 @@ channels:
 dependencies:
   - jupyterlab
   - jlab-enhanced-launcher
-  - pip
-  - pip:
-    - nb-conda-store-kernels
+  - nb_conda_store_kernels
